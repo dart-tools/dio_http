@@ -1,8 +1,6 @@
-Language: [English](README.md) | [中文简体](README-ZH.md)
-
 # dio
-[![Pub](https://img.shields.io/pub/v/dio.svg?style=flat-square)](https://pub.dartlang.org/packages/dio)
-[![support](https://img.shields.io/badge/platform-flutter%7Cflutter%20web%7Cdart%20vm-ff69b4.svg?style=flat-square)](https://github.com/flutterchina/dio)
+[![Pub](https://img.shields.io/pub/v/dio.svg?style=flat-square)](https://pub.dartlang.org/packages/dio_http)
+[![support](https://img.shields.io/badge/platform-flutter%7Cflutter%20web%7Cdart%20vm-ff69b4.svg?style=flat-square)](https://github.com/dart-tools/dio_http)
 
 A powerful Http client for Dart, which supports Interceptors, Global configuration, FormData, Request Cancellation, File downloading, Timeout etc. 
 
@@ -19,7 +17,7 @@ dependencies:
 ### Super simple to use
 
 ```dart
-import 'package:dio/dio.dart';
+import 'package:dio_http/dio.dart';
 void getHttp() async {
   try {
     var response = await Dio().get('http://www.google.com');
@@ -38,12 +36,8 @@ void getHttp() async {
 
 | Plugins                                                      | Status                                                       | Description                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [dio_cookie_manager](https://github.com/flutterchina/dio/tree/master/plugins/cookie_manager) | [![Pub](https://img.shields.io/pub/v/dio_http2_adapter.svg?style=flat-square)](https://pub.dartlang.org/packages/dio_http2_adapter) | A cookie manager for Dio                                     |
-| [dio_http2_adapter](https://github.com/flutterchina/dio/tree/master/plugins/http2_adapter) | [![Pub](https://img.shields.io/pub/v/dio_cookie_manager.svg?style=flat-square)](https://pub.dartlang.org/packages/dio_cookie_manager) | A Dio HttpClientAdapter which support Http/2.0               |
-
-### Related Projects
-
-Welcome to submit Dio's third-party plugins and related libraries [here](https://github.com/flutterchina/dio/issues/347) .
+| [dio_cookie_manager](https://github.com/dart-tools/dio_http/tree/master/plugins/cookie_manager) | [![Pub](https://img.shields.io/pub/v/dio_http2_adapter.svg?style=flat-square)](https://pub.dartlang.org/packages/dio_http2_adapter) | A cookie manager for Dio                                     |
+| [dio_http2_adapter](https://github.com/dart-tools/dio_http/tree/master/plugins/http2_adapter) | [![Pub](https://img.shields.io/pub/v/dio_cookie_manager.svg?style=flat-square)](https://pub.dartlang.org/packages/dio_cookie_manager) | A Dio HttpClientAdapter which support Http/2.0               |
 
 ## Table of contents
 
@@ -187,7 +181,7 @@ await dio.post(
 );
 ```
 
-…you can find all examples code [here](https://github.com/flutterchina/dio/tree/master/example).
+…you can find all examples code [here](https://github.com/dart-tools/dio_http/tree/master/example).
 
 
 
@@ -317,7 +311,7 @@ The Options class describes the http request information and configuration. Each
 }
 ```
 
-There is a complete example [here](https://github.com/flutterchina/dio/blob/master/example/options.dart).
+There is a complete example [here](https://github.com/dart-tools/dio_http/blob/master/example/options.dart).
 
 ## Response Schema
 
@@ -388,7 +382,7 @@ dio.interceptors.add(InterceptorsWrapper(
 Simple interceptor example:
 
 ```dart
-import 'package:dio/dio.dart';
+import 'package:dio_http/dio.dart';
 class CustomInterceptors extends Interceptor {
   @override
   void onRequest(RequestOptions options, RequestInterceptorHandler handler) {
@@ -487,7 +481,7 @@ dio.interceptors.add(InterceptorsWrapper(
 ));
 ```
 
-For complete codes click [here](https://github.com/flutterchina/dio/blob/master/example/interceptor_lock.dart).
+For complete codes click [here](https://github.com/dart-tools/dio_http/blob/master/example/interceptor_lock.dart).
 
 ### Log
 
@@ -499,11 +493,11 @@ dio.interceptors.add(LogInterceptor(responseBody: false)); //开启请求日志
 
 ### Custom Interceptor
 
-You can custom interceptor by extending the `Interceptor` class. There is an example that implementing a simple cache policy: [custom cache interceptor](https://github.com/flutterchina/dio/blob/master/example/custom_cache_interceptor.dart).
+You can custom interceptor by extending the `Interceptor` class. There is an example that implementing a simple cache policy: [custom cache interceptor](https://github.com/dart-tools/dio_http/blob/master/example/custom_cache_interceptor.dart).
 
 ## Cookie Manager
 
-[dio_cookie_manager](https://github.com/flutterchina/dio/tree/master/plugins/cookie_manager) package is a cookie manager for Dio.  
+[dio_cookie_manager](https://github.com/dart-tools/dio_http/tree/master/plugins/cookie_manager) package is a cookie manager for Dio.  
 
 ## Handling Errors
 
@@ -602,7 +596,7 @@ var formData = FormData.fromMap({
 response = await dio.post('/info', data: formData);
 ```
 
-There is a complete example [here](https://github.com/flutterchina/dio/blob/master/example/formdata.dart).
+There is a complete example [here](https://github.com/dart-tools/dio_http/blob/master/example/formdata.dart).
 
 ### Multiple files upload
 
@@ -660,7 +654,7 @@ void main() {
 
 ### Other Example
 
-There is an example for [customizing Transformer](https://github.com/flutterchina/dio/blob/master/example/transfomer.dart).
+There is an example for [customizing Transformer](https://github.com/dart-tools/dio_http/blob/master/example/transfomer.dart).
 
 ## HttpClientAdapter
 
@@ -676,15 +670,15 @@ We can use any HttpClient not just `dart:io:HttpClient` to make the Http request
 dio.httpClientAdapter = new DefaultHttpClientAdapter();
 ```
 
-[Here](https://github.com/flutterchina/dio/blob/master/example/adapter.dart) is a simple example to custom adapter. 
+[Here](https://github.com/dart-tools/dio_http/blob/master/example/adapter.dart) is a simple example to custom adapter. 
 
 ### Using proxy
 
 `DefaultHttpClientAdapter` provide a callback to set proxy to `dart:io:HttpClient`, for example:
 
 ```dart
-import 'package:dio/dio.dart';
-import 'package:dio/adapter.dart';
+import 'package:dio_http/dio.dart';
+import 'package:dio_http/adapter.dart';
 ...
 (dio.httpClientAdapter as DefaultHttpClientAdapter).onHttpClientCreate = (client) {
   // config the http client
@@ -697,7 +691,7 @@ import 'package:dio/adapter.dart';
 };
 ```
 
-There is a complete example [here](https://github.com/flutterchina/dio/blob/master/example/proxy.dart).
+There is a complete example [here](https://github.com/dart-tools/dio_http/blob/master/example/proxy.dart).
 
 ### Https certificate verification
 
@@ -731,7 +725,7 @@ In this way,  the format of certificate must be PEM or PKCS12.
 
 ## Http2 support
 
-[dio_http2_adapter](https://github.com/flutterchina/dio/tree/master/plugins/http2_adapter) package is a Dio HttpClientAdapter which support Http/2.0 .
+[dio_http2_adapter](https://github.com/dart-tools/dio_http/dio/tree/master/plugins/http2_adapter) package is a Dio HttpClientAdapter which support Http/2.0 .
 
 ## Cancellation
 
@@ -751,15 +745,15 @@ dio.get(url, cancelToken: token)
 token.cancel('cancelled');
 ```
 
-There is a complete example [here](https://github.com/flutterchina/dio/blob/master/example/cancel_request.dart).
+There is a complete example [here](https://github.com/dart-tools/dio_http/blob/master/example/cancel_request.dart).
 
 ## Extends Dio class
 
 `Dio` is a abstract class with factory constructor，so we don't extend `Dio` class directy. For this purpose,  we can extend `DioForNative` or `DioForBrowser` instead, for example:
 
 ```dart
-import 'package:dio/dio.dart';
-import 'package:dio/native_imp.dart'; //If in browser, import 'package:dio/browser_imp.dart'
+import 'package:dio_http/dio.dart';
+import 'package:dio_http/native_imp.dart'; //If in browser, import 'package:dio_http/browser_imp.dart'
 
 class Http extends DioForNative {
   Http([BaseOptions options]):super(options){
@@ -776,18 +770,8 @@ class MyDio with DioMixin implements Dio{
 }
 ```
 
-## Copyright & License
-
-This open source project authorized by https://flutterchina.club , and the license is MIT.
-
 ## Features and bugs
 
 Please file feature requests and bugs at the [issue tracker][tracker].
 
-[tracker]: https://github.com/flutterchina/dio/issues
-
-## Donate
-
-Buy a cup of coffee for me (Scan by wechat)：
-
-![](https://cdn.jsdelivr.net/gh/flutterchina/flutter-in-action@1.0.3/docs/imgs/pay.jpeg)
+[tracker]: https://github.com/dart-tools/dio_http/issues

@@ -1,6 +1,6 @@
 # dio_cookie_manager [![Pub](https://img.shields.io/pub/v/dio_cookie_manager.svg?style=flat-square)](https://pub.dartlang.org/packages/dio_cookie_manager)
 
-A  cookie manager for [Dio](https://github.com/flutterchina/dio). 
+A  cookie manager for [Dio](https://github.com/dart-tools/dio_http). 
 
 ## Getting Started
 

@@ -1,6 +1,6 @@
 ### New Issue Checklist
 
-- [ ] I have searched for a similar issue in the [project](https://github.com/flutterchina/dio/issues) and found none
+- [ ] I have searched for a similar issue in the [project](https://github.com/dart-tools/dio_http/issues) and found none
 
 ### Issue Info
 
