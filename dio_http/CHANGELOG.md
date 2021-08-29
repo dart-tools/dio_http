@@ -1,3 +1,7 @@
+# 5.0.0
+
+Forked package as dio_http.
+Greatly improved performance on Web.
 
 # 4.0.0
 

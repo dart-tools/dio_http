@@ -12,7 +12,7 @@ This package has been forked from [Dio](https://github.com/flutterchina/dio). To
 
 ```yaml
 dependencies:
-  dio: ^4.0.0
+  dio_http: ^5.0.0
 ```
 > Already know Dio 3 and just want to learn about what's new in Dio 4? Check out the [Migration Guide](./migration_to_4.x.md)!
 
