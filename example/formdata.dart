@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
-import 'package:dio/dio.dart';
-import 'package:dio/adapter.dart';
+import 'package:dio_http/dio.dart';
+import 'package:dio_http/adapter.dart';
 
 void showProgress(received, total) {
   if (total != -1) {

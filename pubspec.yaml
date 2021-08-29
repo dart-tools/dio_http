@@ -1,18 +1,18 @@
-name: dio_example
+name: dio_http_example
 description: A powerful Http client for Dart, which supports Interceptors, FormData, Request Cancellation, File Downloading, Timeout etc.
 version: 0.0.1
 homepage: https://github.com/dart-tools/dio_http
+publish_to: none
 environment:
   sdk: ">=2.12.0-0 <3.0.0"
 
 dependencies:
-  dio:
-    path: dio
+  dio_http:
+    path: dio_http
   dio_http2_adapter:
     path: plugins/http2_adapter
   dio_cookie_manager:
     path: plugins/cookie_manager
-  test: ^1.16.0
+  test: ^1.17.11
   pedantic: ^1.10.0
-  test_coverage: ^0.5.0
 

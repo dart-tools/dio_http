@@ -1,4 +1,4 @@
-import 'package:dio/dio.dart';
+import 'package:dio_http/dio.dart';
 import 'package:test/test.dart';
 
 void main() {

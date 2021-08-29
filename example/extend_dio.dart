@@ -1,5 +1,5 @@
-import 'package:dio/dio.dart';
-import 'package:dio/native_imp.dart';
+import 'package:dio_http/dio.dart';
+import 'package:dio_http/native_imp.dart';
 
 class HttpService extends DioForNative {
   HttpService([BaseOptions? baseOptions]) : super(baseOptions) {

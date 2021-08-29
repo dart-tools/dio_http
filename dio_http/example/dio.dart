@@ -1,4 +1,4 @@
-import 'package:dio/dio.dart';
+import 'package:dio_http/dio.dart';
 
 /// More examples see https://github.com/dart-tools/dio_http/tree/master/example
 void main() async {

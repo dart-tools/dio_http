@@ -1,4 +1,4 @@
-import 'package:dio/dio.dart';
+import 'package:dio_http/dio.dart';
 
 class CacheInterceptor extends Interceptor {
   CacheInterceptor();

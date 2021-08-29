@@ -2,7 +2,7 @@ import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:dio/dio.dart';
+import 'package:dio_http/dio.dart';
 
 void main() async {
   var dio = Dio(BaseOptions(
@@ -15,20 +15,22 @@ void main() async {
   var file = File('./example/bee.mp4');
 
   // Sending stream
-  await dio.post('post',
+  await dio.post(
+    'post',
     data: file.openRead(),
     options: Options(
       headers: {
         HttpHeaders.contentTypeHeader: ContentType.text,
         HttpHeaders.contentLengthHeader: file.lengthSync(),
-       // HttpHeaders.authorizationHeader: 'Bearer $token',
+        // HttpHeaders.authorizationHeader: 'Bearer $token',
       },
     ),
   );
 
   // Sending bytes with Stream(Just an example, you can send json(Map) directly in action)
   var postData = utf8.encode('{"userName":"wendux"}');
-  await dio.post('post',
+  await dio.post(
+    'post',
     data: Stream.fromIterable(postData.map((e) => [e])),
     options: Options(
       headers: {

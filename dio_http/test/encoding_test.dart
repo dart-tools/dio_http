@@ -1,5 +1,5 @@
-import 'package:dio/dio.dart';
-import 'package:dio/src/parameter.dart';
+import 'package:dio_http/dio.dart';
+import 'package:dio_http/src/parameter.dart';
 import 'package:test/test.dart';
 
 void main() {

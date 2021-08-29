@@ -1,6 +1,6 @@
 import 'dart:io';
-import 'package:dio/dio.dart';
-import 'package:dio/adapter.dart';
+import 'package:dio_http/dio.dart';
+import 'package:dio_http/adapter.dart';
 
 void main() async {
   var dio = Dio();

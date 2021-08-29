@@ -1,4 +1,4 @@
-import 'package:dio/dio.dart';
+import 'package:dio_http/dio.dart';
 
 void main() async {
   var dio = Dio(
@@ -30,7 +30,7 @@ void main() async {
   // it will cause a Error (type 'String' is not a subtype of type 'Map<dynamic, dynamic>')
   try {
     response = await dio.get<Map>('https://baidu.com');
-  } on DioError catch(e){
+  } on DioError catch (e) {
     print(e.message);
   }
 

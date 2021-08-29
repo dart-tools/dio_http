@@ -2,8 +2,7 @@
 /// Global configuration, FormData, File downloading etc. and Dio is
 /// very easy to use.
 ///
-/// A open source project authorized by [https://flutterchina.club](https://flutterchina.club).
-library dio;
+library dio_http;
 
 export 'src/dio.dart';
 export 'src/dio_mixin.dart';

@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'dart:io';
 import 'package:cookie_jar/cookie_jar.dart';
-import 'package:dio/dio.dart';
+import 'package:dio_http/dio.dart';
 
 /// Don't use this class in Browser environment
 class CookieManager extends Interceptor {

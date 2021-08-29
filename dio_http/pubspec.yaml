@@ -1,4 +1,4 @@
-name: dio
+name: dio_http
 description: A powerful Http client for Dart, which supports Interceptors, FormData, Request Cancellation, File Downloading, Timeout etc.
 version: 4.0.0
 homepage: https://github.com/dart-tools/dio_http
@@ -11,7 +11,5 @@ dependencies:
   path: ^1.8.0
 
 dev_dependencies:
-  test: ^1.16.0
+  test: ^1.17.11
   pedantic: ^1.10.0
-  test_coverage: ^0.5.0
-

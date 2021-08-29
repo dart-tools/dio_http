@@ -17,7 +17,7 @@ dependencies:
 ### Super simple to use
 
 ```dart
-import 'package:dio/dio.dart';
+import 'package:dio_http/dio.dart';
 void getHttp() async {
   try {
     var response = await Dio().get('http://www.google.com');
@@ -382,7 +382,7 @@ dio.interceptors.add(InterceptorsWrapper(
 Simple interceptor example:
 
 ```dart
-import 'package:dio/dio.dart';
+import 'package:dio_http/dio.dart';
 class CustomInterceptors extends Interceptor {
   @override
   void onRequest(RequestOptions options, RequestInterceptorHandler handler) {
@@ -677,8 +677,8 @@ dio.httpClientAdapter = new DefaultHttpClientAdapter();
 `DefaultHttpClientAdapter` provide a callback to set proxy to `dart:io:HttpClient`, for example:
 
 ```dart
-import 'package:dio/dio.dart';
-import 'package:dio/adapter.dart';
+import 'package:dio_http/dio.dart';
+import 'package:dio_http/adapter.dart';
 ...
 (dio.httpClientAdapter as DefaultHttpClientAdapter).onHttpClientCreate = (client) {
   // config the http client
@@ -752,8 +752,8 @@ There is a complete example [here](https://github.com/dart-tools/dio_http/blob/m
 `Dio` is a abstract class with factory constructor，so we don't extend `Dio` class directy. For this purpose,  we can extend `DioForNative` or `DioForBrowser` instead, for example:
 
 ```dart
-import 'package:dio/dio.dart';
-import 'package:dio/native_imp.dart'; //If in browser, import 'package:dio/browser_imp.dart'
+import 'package:dio_http/dio.dart';
+import 'package:dio_http/native_imp.dart'; //If in browser, import 'package:dio_http/browser_imp.dart'
 
 class Http extends DioForNative {
   Http([BaseOptions options]):super(options){

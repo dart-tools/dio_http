@@ -11,7 +11,7 @@ dependencies:
 ### Example
 
 ```dart
-import 'package:dio/dio.dart';
+import 'package:dio_http/dio.dart';
 import 'package:dio_http2_adapter/dio_http2_adapter.dart';
 
 void main() async {
