@@ -1,8 +1,10 @@
-# dio
+# dio_http
 [![Pub](https://img.shields.io/pub/v/dio.svg?style=flat-square)](https://pub.dartlang.org/packages/dio_http)
 [![support](https://img.shields.io/badge/platform-flutter%7Cflutter%20web%7Cdart%20vm-ff69b4.svg?style=flat-square)](https://github.com/dart-tools/dio_http)
 
 A powerful Http client for Dart, which supports Interceptors, Global configuration, FormData, Request Cancellation, File downloading, Timeout etc. 
+
+This package has been forked from [Dio](https://github.com/flutterchina/dio). To read why, [click here](https://github.com/dart-tools/dio_http/FORK.md).
 
 ## Get started
 
