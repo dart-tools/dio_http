@@ -4,7 +4,7 @@
 
 A powerful Http client for Dart, which supports Interceptors, Global configuration, FormData, Request Cancellation, File downloading, Timeout etc. 
 
-This package has been forked from [Dio](https://github.com/flutterchina/dio). To read why, [click here](https://github.com/dart-tools/dio_http/FORK.md).
+This package has been forked from [Dio](https://github.com/flutterchina/dio). To read why, [click here](https://github.com/dart-tools/dio_http/blob/master/FORK.md).
 
 ## Get started
 
