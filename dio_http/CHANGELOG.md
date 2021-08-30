@@ -1,3 +1,7 @@
+# 5.0.2
+
+- Fix pub.dev not recognizing platform and example file
+
 # 5.0.1
 
 - LICENSE fix
