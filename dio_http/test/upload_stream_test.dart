@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:dio_http/dio.dart';
+import 'package:dio_http/dio_http.dart';
 import 'package:test/test.dart';
 
 void main() {

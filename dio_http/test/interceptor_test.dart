@@ -1,5 +1,5 @@
 import 'dart:async';
-import 'package:dio_http/dio.dart';
+import 'package:dio_http/dio_http.dart';
 import 'package:test/test.dart';
 import 'mock_adapter.dart';
 import 'echo_adapter.dart';

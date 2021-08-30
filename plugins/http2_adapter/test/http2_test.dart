@@ -1,4 +1,4 @@
-import 'package:dio_http/dio.dart';
+import 'package:dio_http/dio_http.dart';
 import 'package:test/test.dart';
 import 'package:dio_http2_adapter/dio_http2_adapter.dart';
 

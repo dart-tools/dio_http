@@ -1,4 +1,4 @@
-import 'package:dio_http/dio.dart';
+import 'package:dio_http/dio_http.dart';
 
 void getHttp() async {
   var dio = Dio();

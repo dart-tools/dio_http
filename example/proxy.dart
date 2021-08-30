@@ -1,5 +1,5 @@
 import 'dart:io';
-import 'package:dio_http/dio.dart';
+import 'package:dio_http/dio_http.dart';
 import 'package:dio_http/adapter.dart';
 
 void main() async {

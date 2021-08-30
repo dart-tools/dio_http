@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:dio_http/dio.dart';
+import 'package:dio_http/dio_http.dart';
 
 void main() async {
   const URL_NOT_FIND = 'https://wendux.github.io/xxxxx/';
