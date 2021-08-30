@@ -1,7 +1,12 @@
+# 5.0.1
+
+- LICENSE fix
+- Fix version badge in readme
+
 # 5.0.0
 
-Forked package as dio_http.
-Greatly improved performance on Web.
+- Forked package as dio_http.
+- Greatly improved download performance on Web.
 
 # 4.0.0
 
