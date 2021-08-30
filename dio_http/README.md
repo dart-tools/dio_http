@@ -326,7 +326,7 @@ The response for a request contains the following information.
   /// Response headers.
   Headers headers;
   /// The corresponding request info.
-  Options request;
+  RequestOptions requestOptions;
   /// Http status code.
   int? statusCode;
   String? statusMessage;
@@ -347,7 +347,7 @@ When request is succeed, you will receive the response as follows:
 Response response = await dio.get('https://www.google.com');
 print(response.data);
 print(response.headers);
-print(response.request);
+print(response.requestOptions);
 print(response.statusCode);
 ```
 
@@ -515,10 +515,10 @@ try {
   if (e.response) {
     print(e.response.data)
     print(e.response.headers)
-    print(e.response.request)
+    print(e.response.requestOptions)
   } else {
     // Something happened in setting up or sending the request that triggered an Error
-    print(e.request)
+    print(e.requestOptions)
     print(e.message)
   }
 }
@@ -532,7 +532,7 @@ try {
   /// the http server, for example, occurring a dns error, network is not available.
   Response? response;
   /// Request info.
-  RequestOptions? request;
+  RequestOptions? requestOptions;
   /// Error descriptions.
   String message;
 
