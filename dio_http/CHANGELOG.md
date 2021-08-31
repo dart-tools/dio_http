@@ -1,3 +1,8 @@
+# 5.0.3
+
+- Fix content type being overwritten when set in certain cases
+- Fix content-type assert being triggered when setting the content-type in certain cases
+
 # 5.0.2
 
 - Fix pub.dev not recognizing platform and example file
@@ -25,7 +30,7 @@ stable version
 
 # 4.0.0-prev1
 
- **Interceptors:** Add  `handler` for Interceptor APIs which can specify the subsequent interceptors processing logic more finely（whether to skip them or not)）
+ **Interceptors:** Add  `handler` for Interceptor APIs which can specify the subsequent interceptors processing logic more finely（whether to skip them or not）
 
 # 4.0.0-beta7
 
