@@ -8,7 +8,7 @@ environment:
 
 dependencies:
   http2: ^2.0.0
-  dio_http: ^4.0.0
+  dio_http: ^5.0.2
 #  dio:
 #    path: ../../dio
 
