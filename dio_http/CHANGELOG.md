@@ -1,3 +1,7 @@
+# 5.0.4
+
+- Fix upload performance on Web
+
 # 5.0.3
 
 - Fix content type being overwritten when set in certain cases
