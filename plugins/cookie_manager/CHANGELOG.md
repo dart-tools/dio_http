@@ -1,3 +1,6 @@
+## [3.0.0]
+
+* Publish this package, using dio_http as a dependency
 
 ## [2.0.0]
 

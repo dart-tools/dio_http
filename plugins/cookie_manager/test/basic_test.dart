@@ -1,7 +1,7 @@
 import 'package:dio_http/dio_http.dart';
 import 'package:test/test.dart';
 import 'package:cookie_jar/cookie_jar.dart';
-import 'package:dio_http_cookie_manager/dio_cookie_manager.dart';
+import 'package:dio_http_cookie_manager/dio_http_cookie_manager.dart';
 
 void main() {
   test('cookie-jar', () async {
@@ -12,7 +12,9 @@ void main() {
       ..add(LogInterceptor());
     await dio.get('https://baidu.com/');
     // Print cookies
-    print(cookieJar.loadForRequest(Uri.parse('https://baidu.com/')));
+    var cookies =
+        await cookieJar.loadForRequest(Uri.parse('https://baidu.com/'));
+    print(cookies);
     // second request with the cookie
     await dio.get('https://baidu.com/');
   });

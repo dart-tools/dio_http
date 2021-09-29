@@ -1,6 +1,6 @@
-# dio_cookie_manager [![Pub](https://img.shields.io/pub/v/dio_cookie_manager.svg?style=flat-square)](https://pub.dartlang.org/packages/dio_cookie_manager)
+# dio_http_cookie_manager [![Pub](https://img.shields.io/pub/v/dio_http_cookie_manager.svg?style=flat-square)](https://pub.dartlang.org/packages/dio_http_cookie_manager)
 
-A  cookie manager for [Dio](https://github.com/dart-tools/dio_http). 
+A  cookie manager for [dio_http](https://github.com/dart-tools/dio_http). 
 
 ## Getting Started
 
@@ -8,14 +8,14 @@ A  cookie manager for [Dio](https://github.com/dart-tools/dio_http).
 
 ```yaml
 dependencies:
-  dio_cookie_manager: ^2.0.0  #latest version
+  dio_http_cookie_manager: ^3.0.0  #latest version
 ```
 
 ### Usage
 
 ```dart
 import 'package:dio_http/dio_http.dart';
-import 'package:dio_http_cookie_manager/dio_cookie_manager.dart';
+import 'package:dio_http_cookie_manager/dio_http_cookie_manager.dart';
 import 'package:cookie_jar/cookie_jar.dart';
 
 main() async {
@@ -39,7 +39,7 @@ main() async {
 
 CookieManager Interceptor can help us manage the request/response cookies automatically. CookieManager depends on `cookieJar` package :
 
-> The dio_cookie_manager  manage API is based on the withdrawn [cookie_jar](https://github.com/flutterchina/cookie_jar).
+> The dio_http_cookie_manager  manage API is based on the withdrawn [cookie_jar](https://github.com/flutterchina/cookie_jar).
 
 You can create a `CookieJar` or `PersistCookieJar` to manage cookies automatically, and dio use the `CookieJar` by default, which saves the cookies **in RAM**. If you want to persists cookies, you can use the `PersistCookieJar` class, for example:
 
