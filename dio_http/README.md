@@ -38,8 +38,8 @@ void getHttp() async {
 
 | Plugins                                                      | Status                                                       | Description                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [dio_http_cookie_manager](https://github.com/dart-tools/dio_http/tree/master/plugins/cookie_manager) | [![Pub](https://img.shields.io/pub/v/dio_http2_adapter.svg?style=flat-square)](https://pub.dartlang.org/packages/dio_http2_adapter) | A cookie manager for Dio                                     |
-| [dio_http2_adapter](https://github.com/dart-tools/dio_http/tree/master/plugins/http2_adapter) | [![Pub](https://img.shields.io/pub/v/dio_http_cookie_manager.svg?style=flat-square)](https://pub.dartlang.org/packages/dio_http_cookie_manager) | A Dio HttpClientAdapter which support Http/2.0               |
+| [dio_http_cookie_manager](https://github.com/dart-tools/dio_http/tree/master/plugins/cookie_manager) | [![Pub](https://img.shields.io/pub/v/dio_http2_adapter.svg?style=flat-square)](https://pub.dartlang.org/packages/dio_http_cookie_manager) | A cookie manager for Dio                                     |
+| [dio_http2_adapter](https://github.com/dart-tools/dio_http/tree/master/plugins/http2_adapter) | [![Pub](https://img.shields.io/pub/v/dio_http_cookie_manager.svg?style=flat-square)](https://pub.dartlang.org/packages/dio_http2_adapter) | A Dio HttpClientAdapter which support Http/2.0               |
 
 ## Table of contents
 
