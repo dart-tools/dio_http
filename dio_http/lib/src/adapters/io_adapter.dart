@@ -29,7 +29,8 @@ class DefaultHttpClientAdapter implements HttpClientAdapter {
   ) async {
     if (_closed) {
       throw Exception(
-          "Can't establish connection after [HttpClientAdapter] closed!");
+        "Can't establish connection after [HttpClientAdapter] closed!",
+      );
     }
     var _httpClient = _configHttpClient(cancelFuture, options.connectTimeout);
     var reqFuture = _httpClient.openUrl(options.method, options.uri);
@@ -45,8 +46,9 @@ class DefaultHttpClientAdapter implements HttpClientAdapter {
     late HttpClientRequest request;
     try {
       if (options.connectTimeout > 0) {
-        request = await reqFuture
-            .timeout(Duration(milliseconds: options.connectTimeout));
+        request = await reqFuture.timeout(
+          Duration(milliseconds: options.connectTimeout),
+        );
       } else {
         request = await reqFuture;
       }
@@ -80,12 +82,13 @@ class DefaultHttpClientAdapter implements HttpClientAdapter {
       _throwConnectingTimeout();
     }
 
-    var stream =
-        responseStream.transform<Uint8List>(StreamTransformer.fromHandlers(
-      handleData: (data, sink) {
-        sink.add(Uint8List.fromList(data));
-      },
-    ));
+    var stream = responseStream.transform<Uint8List>(
+      StreamTransformer.fromHandlers(
+        handleData: (data, sink) => sink.add(
+          Uint8List.fromList(data),
+        ),
+      ),
+    );
 
     var headers = <String, List<String>>{};
     responseStream.headers.forEach((key, values) {
@@ -98,7 +101,9 @@ class DefaultHttpClientAdapter implements HttpClientAdapter {
       isRedirect:
           responseStream.isRedirect || responseStream.redirects.isNotEmpty,
       redirects: responseStream.redirects
-          .map((e) => RedirectRecord(e.statusCode, e.method, e.location))
+          .map(
+            (e) => RedirectRecord(e.statusCode, e.method, e.location),
+          )
           .toList(),
       statusMessage: responseStream.reasonPhrase,
     );
