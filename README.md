@@ -1,3 +1,8 @@
+**READ THIS FIRST:**
+
+**Update 2021-11-22:**
+This package is now archived. This was originally forked because the owner of the [Dio](https://github.com/flutterchina/dio) package was inactive, but he has sinced returned from inactiveness and has added some more contributors to prevent this from happening again in the future. All future development continues over on [Dio](https://github.com/flutterchina/dio).
+
 # dio_http
 [![Pub](https://img.shields.io/pub/v/dio_http.svg?style=flat-square)](https://pub.dartlang.org/packages/dio_http)
 [![support](https://img.shields.io/badge/platform-flutter%7Cflutter%20web%7Cdart%20vm-ff69b4.svg?style=flat-square)](https://github.com/dart-tools/dio_http)
